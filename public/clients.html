@@ -1,0 +1,19 @@
+<h2 class="page-header">User Accounts</h2>
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th>#</th>
+      <th>Name</th>
+      <th>Deposit</th>
+      <th>Credit Card</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr ng-repeat="client in clients">
+      <td>{{ client._id}}</td>
+      <td>{{ client.name }}</td>
+      <td>{{ client.deposit }}</td>
+      <td>{{ client.cCard }}</td>
+    </tr>
+  </tbody>
+</table>
